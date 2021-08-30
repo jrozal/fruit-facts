@@ -35,7 +35,7 @@ const Media = styled.div`
     bottom: -30px;
     left: 50%;
     height: 8px;
-    width: 60%;
+    width: 85%;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.2);
