@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 const Container = styled.header`
   display: flex;
-  padding: 3.25rem 8rem;
-  justify-content: center;
+  padding: 3.25rem 5rem;
+  justify-content: space-around;
   align-items: center;
 
   @media only screen and (max-width: 735px) {
@@ -15,8 +15,8 @@ const Container = styled.header`
 const Content = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 40rem;
-  margin-right: 3rem;
+  max-width: 50rem;
+  margin-right: 5rem;
 
   @media only screen and (max-width: 735px) {
     margin: 0;
@@ -49,6 +49,7 @@ const Media = styled.div`
 
 const H1 = styled.h1`
   font-size: 5rem;
+  color: #2B562B;
   text-transform: uppercase;
   margin: 2rem 0;
 
