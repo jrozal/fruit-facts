@@ -13,6 +13,7 @@ const Gallery = styled.div`
 
   @media only screen and (max-width: 735px) {
     padding: 1rem;
+    grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
   }
 `;
