@@ -3,7 +3,7 @@ import { Container,
   Media,
   H1,
   Text }from './Header.styled';
-import FruitSvg from './FruitSvg';
+import Fruit from '../Icons/Fruit';
 
 const Header = () => {
   return (
@@ -14,7 +14,7 @@ const Header = () => {
         <Text>Check out the fruits below to learn more!</Text>
       </Content>
       <Media>
-        <FruitSvg />
+        <Fruit />
       </Media>
     </Container>
 
