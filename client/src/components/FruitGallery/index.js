@@ -3,17 +3,17 @@ import { Gallery, Card } from './FruitGallery.styled';
 import Modal from '../Modal';
 import useModal from '../../useModal';
 
-const FruitGallery = (props) => {
+const FruitGallery = ({ data }) => {
   const { isOpen, toggle } = useModal();
   const [modalData, setModalData] = useState({});
 
-  const handleClick = (data) => () => {
-    setModalData({ test: data });
+  const handleClick = (fruitRecord) => () => {
+    setModalData(fruitRecord);
     toggle();
   };
 
-  const photos = props.photos.map((photo, i) => {
-    return <Card key={i} img={photo} onClick={handleClick('AHH')}></Card>
+  const photos = data.map((record, i) => {
+    return <Card key={i} img={record.photo} onClick={handleClick(record)}></Card>
   });
 
   return (
