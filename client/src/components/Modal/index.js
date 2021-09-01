@@ -4,13 +4,12 @@ import {
   Content,
   Heading,
   Image,
-  ImageContainer,
   Item,
   Overlay,
   SubContent,
   TopContent,
 } from './Modal.styled';
-import { record } from '../../temp';
+import CloseButton from '../Icons/CloseButton';
 
 const Modal = ({ isOpen, close, data }) => {
   return (
@@ -18,26 +17,24 @@ const Modal = ({ isOpen, close, data }) => {
       {isOpen && (
         <Overlay>
           <Content>
-            <Button onClick={close}>Close</Button>
+            <Button onClick={close}><CloseButton/></Button>
             <TopContent>
-              <ImageContainer>
-                <Image src={record.photo} alt=""></Image>
-              </ImageContainer>
+              <Image img={data.photo}/>
               <SubContent>
-                <Heading>{record.name}</Heading>
-                <div><strong>Genus:</strong> {record.genus}</div>
-                <div><strong>Family:</strong> {record.family}</div>
-                <div><strong>Order:</strong> {record.order}</div>
+                <Heading>{data.name}</Heading>
+                <div><strong>Genus:</strong> {data.genus}</div>
+                <div><strong>Family:</strong> {data.family}</div>
+                <div><strong>Order:</strong> {data.order}</div>
               </SubContent>
             </TopContent>
             <BottomContent>
-              <Heading>Nutrition Facts</Heading>
               <SubContent>
-                <Item><strong>Carbohydrates:</strong> {record.nutritions.carbohydrates}g</Item>
-                <Item><strong>Protein:</strong> {record.nutritions.protein}g</Item>
-                <Item><strong>Fat:</strong> {record.nutritions.fat}g</Item>
-                <Item><strong>Calories:</strong> {record.nutritions.calories}g</Item>
-                <Item><strong>Sugar:</strong> {record.nutritions.sugar}g</Item>
+                <Heading>Nutrition Facts</Heading>
+                <Item><strong>Carbohydrates:</strong> {data.nutritions.carbohydrates}g</Item>
+                <Item><strong>Protein:</strong> {data.nutritions.protein}g</Item>
+                <Item><strong>Fat:</strong> {data.nutritions.fat}g</Item>
+                <Item><strong>Calories:</strong> {data.nutritions.calories}g</Item>
+                <Item><strong>Sugar:</strong> {data.nutritions.sugar}g</Item>
               </SubContent>
             </BottomContent>
           </Content>
