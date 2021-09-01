@@ -21,9 +21,9 @@ const Gallery = styled.div`
 const Card = styled.div`
   width: 100%;
   padding-bottom: 100%;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-image: url(${props => props.img});
   border-radius: 1.5rem;
   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
