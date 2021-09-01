@@ -30,7 +30,10 @@ const Content = styled.div`
 `;
 
 const Button = styled.button`
+  border: none;
+  background-color: transparent;
   float: right;
+  cursor: pointer;
 `;
 
 const TopContent = styled.div`
@@ -53,7 +56,7 @@ const Item = styled.div`
   margin-top: 0.5rem;
 `;
 
-const ImageContainer = styled.div`
+const Image = styled.div`
   height: 100px;
   width: 100px;
   position: relative;
@@ -61,13 +64,11 @@ const ImageContainer = styled.div`
   border-radius: 50%;
   display: flex;
   align-items: center;
+  background-image: url(${props => props.img});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 `;
-
-const Image = styled.img`
-  height: 150%;
-  width: auto;
-`;
-
 
 const Heading = styled.h3`
   font-size: 2rem;
@@ -87,7 +88,6 @@ export {
   Content,
   Heading,
   Image,
-  ImageContainer,
   Item,
   Overlay,
   SubContent,
