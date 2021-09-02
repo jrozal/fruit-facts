@@ -14,7 +14,6 @@ const App = () => {
       const response = await axios.get('/data');
       setLoading(false);
       setData(response.data);
-      console.log(response.data)
     }
 
     catch (error) {
