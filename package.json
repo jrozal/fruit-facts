@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-client": "cd client/ && npm install && npm run build",
-    "build-server": "cd server/ && npm install",
-    "start": "node server"
+    "start": "node server",
+    "build": "cd client/ && npm install && npm run build"
   },
   "repository": {
     "type": "git",
@@ -18,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/jrozal/fruit-facts/issues"
   },
-  "homepage": "https://github.com/jrozal/fruit-facts#readme"
+  "homepage": "https://github.com/jrozal/fruit-facts#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
 }
