@@ -13,7 +13,12 @@ const photos = {
   "raspberry": "https://res.cloudinary.com/db8r02snr/image/upload/w_750,c_scale/v1630479924/raspberry_bw4jbr.jpg",
   "strawberry": "https://res.cloudinary.com/db8r02snr/image/upload/w_750,c_scale/v1630479945/strawberry_t4mmli.jpg",
   "tomato": "https://res.cloudinary.com/db8r02snr/image/upload/w_750,c_scale/v1630480111/tomato_clgdag.jpg",
-  "watermelon": "https://res.cloudinary.com/db8r02snr/image/upload/w_750,c_scale/v1630479994/watermelon_s5x84k.png"
+  "watermelon": "https://res.cloudinary.com/db8r02snr/image/upload/w_750,c_scale/v1630479994/watermelon_s5x84k.png",
+  "persimmon": "https://res.cloudinary.com/db8r02snr/image/upload/w_750,c_scale/v1630610003/persimmon_fgzpai.jpg",
+  "papaya": "https://res.cloudinary.com/db8r02snr/image/upload/w_750,c_scale/v1630610004/papaya_s3wfqt.webp",
+  "melon": "https://res.cloudinary.com/db8r02snr/image/upload/w_750,c_scale/v1630610004/melon_ahghol.jpg",
+  "lime": "https://res.cloudinary.com/db8r02snr/image/upload/w_750,c_scale/v1630610002/lime_lpvmky.jpg",
+  "grapes": "https://res.cloudinary.com/db8r02snr/image/upload/w_750,c_scale/v1630610002/grapes_vcphqi.jpg"
 };
 
 module.exports = photos;
