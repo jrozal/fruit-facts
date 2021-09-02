@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+const GalleryContainer = styled.div`
+  min-height: 100vh;
+`;
+
 const Gallery = styled.div`
   max-width: 1600px;
   padding: 3.25rem 5rem;
@@ -43,6 +47,7 @@ const Card = styled.div`
 `;
 
 export {
+  GalleryContainer,
   Gallery,
   Card
 };

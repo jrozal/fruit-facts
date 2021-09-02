@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Gallery, Card } from './FruitGallery.styled';
+import { GalleryContainer, Gallery, Card } from './FruitGallery.styled';
 import Modal from '../Modal';
 import useModal from '../../useModal';
 
@@ -17,10 +17,10 @@ const FruitGallery = ({ data }) => {
   });
 
   return (
-    <div>
+    <GalleryContainer>
       <Modal isOpen={isOpen} close={toggle} data={modalData} />
       <Gallery>{photos}</Gallery>
-    </div>
+    </GalleryContainer>
   );
 };
 
