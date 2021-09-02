@@ -49,7 +49,7 @@ const Media = styled.div`
 
 const H1 = styled.h1`
   font-size: 5rem;
-  color: #2B562B;
+  color: #5eaa5f;
   text-transform: uppercase;
   margin: 2rem 0;
 
