@@ -3,6 +3,7 @@ import axios from 'axios';
 import FruitGallery from './components/FruitGallery';
 import Header from './components/Header';
 import Loading from './components/Loading';
+import Footer from './components/Footer';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -27,9 +28,10 @@ const App = () => {
 
   return (
     <div>
-      <Header />
+      <Header/>
       {loading && <Loading/>}
       {!loading && <FruitGallery data={data}/>}
+      <Footer/>
     </div>
   );
 }
