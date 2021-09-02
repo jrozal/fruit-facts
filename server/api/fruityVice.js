@@ -14,7 +14,8 @@ const getFruit = async (name) => {
     const response = await axios.get(`https://www.fruityvice.com/api/fruit/${name}`);
     return response.data;
   } catch (error) {
-    return error;
+    console.error('Fruityvice API Error:', error);
+    return null;
   }
 };
 
