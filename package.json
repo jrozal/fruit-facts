@@ -1,0 +1,22 @@
+{
+  "name": "fruit-facts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "build-client": "cd client/ && npm install && npm run build",
+    "build-server": "cd server/ && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrozal/fruit-facts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrozal/fruit-facts/issues"
+  },
+  "homepage": "https://github.com/jrozal/fruit-facts#readme"
+}
