@@ -6,4 +6,8 @@ const LoadingContainer = styled.div`
   justify-items: center;
 `;
 
-export { LoadingContainer };
+const Image = styled.img`
+  max-width: 100%
+`;
+
+export { LoadingContainer, Image };
