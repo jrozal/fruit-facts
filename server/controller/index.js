@@ -18,11 +18,9 @@ const getFruitsAndPhotos = async (req, res) => {
       }
 
       // else build response data with photos
-      else {
-        let name = res.name.toLowerCase();
-        if (photos[name]) {
-          data.push({ photo: photos[name], ...res })
-        }
+      let name = res.name.toLowerCase();
+      if (photos[name]) {
+        data.push({ photo: photos[name], ...res })
       }
     }
 
