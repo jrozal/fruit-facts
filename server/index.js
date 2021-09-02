@@ -2,12 +2,12 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const port = 3001;
-const axios = require('axios');
+const getFruitsAndPhotos = require('./controller');
 
 app.use(cors({ origin: '*' }));
 
-app.get('/', async (req, res) => {
-  res.send('Hello World')
+app.get('/data', (req, res) => {
+  getFruitsAndPhotos(req, res);
 });
 
 app.listen(port, () => {
