@@ -1,11 +1,10 @@
 const photos = require('../api/photos');
-const getFruit = require('../api/fruityVice');
+const { getFruit, getAllFruit} = require('../api/fruityVice');
 
 const getFruitsAndPhotos = async (req, res) => {
   try {
     const fruit = Object.keys(photos);
-    const requestUrls = fruit.map((name) => getFruit(name));
-    const responses = await Promise.all(requestUrls);
+    const responses = await getAllFruit();
 
     let data = [];
 
@@ -21,6 +20,8 @@ const getFruitsAndPhotos = async (req, res) => {
       let name = res.name.toLowerCase();
       if (photos[name]) {
         data.push({ photo: photos[name], ...res })
+      } else {
+        data.push({ photo: 'no photo available', ...res })
       }
     }
 
