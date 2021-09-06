@@ -18,7 +18,8 @@ const photos = {
   "papaya": "https://res.cloudinary.com/db8r02snr/image/upload/w_750,c_scale/v1630610004/papaya_s3wfqt.webp",
   "melon": "https://res.cloudinary.com/db8r02snr/image/upload/w_750,c_scale/v1630610004/melon_ahghol.jpg",
   "lime": "https://res.cloudinary.com/db8r02snr/image/upload/w_750,c_scale/v1630610002/lime_lpvmky.jpg",
-  "grapes": "https://res.cloudinary.com/db8r02snr/image/upload/w_750,c_scale/v1630610002/grapes_vcphqi.jpg"
+  "grapes": "https://res.cloudinary.com/db8r02snr/image/upload/w_750,c_scale/v1630610002/grapes_vcphqi.jpg",
+  "null": "https://res.cloudinary.com/db8r02snr/image/upload/w_750,c_scale/v1630905588/no-image-available_uffcle.jpg"
 };
 
 module.exports = photos;

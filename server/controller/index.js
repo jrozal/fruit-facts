@@ -21,7 +21,7 @@ const getFruitsAndPhotos = async (req, res) => {
       if (photos[name]) {
         data.push({ photo: photos[name], ...res })
       } else {
-        data.push({ photo: 'no photo available', ...res })
+        data.push({ photo: photos['null'], ...res })
       }
     }
 
