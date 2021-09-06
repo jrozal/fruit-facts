@@ -20,12 +20,12 @@ const Content = styled.div`
   background-color: white;
   border-radius: 1.5rem;
   padding: 1.5rem;
+  display: grid;
 
   @media only screen and (max-width: 735px) {
     width: 80%;
     height: auto;
     padding: 1rem;
-    grid-gap: 1rem;
   }
 `;
 
@@ -34,14 +34,20 @@ const Button = styled.button`
   background-color: transparent;
   float: right;
   cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
 `;
 
 const TopContent = styled.div`
   display: grid;
   grid-template-columns: 100px 1fr;
   grid-gap: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  align-items: center;
+
+  @media only screen and (max-width: 735px) {
+    grid-gap: 0.5rem;
+  }
 `;
 
 const BottomContent = styled.div`
@@ -74,6 +80,10 @@ const Heading = styled.h3`
   font-size: 2rem;
   margin-top: 0rem;
   margin-bottom: 1rem;
+
+  @media only screen and (max-width: 735px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const SubContent = styled.div`
